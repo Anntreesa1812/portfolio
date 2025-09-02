@@ -1,22 +1,75 @@
+/* Global Styles */
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f9f9f9;
+  background: #f0f4f8;
   color: #333;
+  line-height: 1.6;
 }
 
+/* Header */
 header {
   text-align: center;
-  background: #0073e6;
+  background: linear-gradient(135deg, #0073e6, #00bfff);
   color: white;
-  padding: 2rem;
+  padding: 4rem 2rem;
+}
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+header p {
+  font-size: 1.2rem;
 }
 
+/* Section Styling */
 section {
-  margin: 2rem;
-  padding: 1rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
   background: white;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+section h2 {
+  color: #0073e6;
+  margin-bottom: 1rem;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 1.5rem;
+}
+.project h3 {
+  color: #00bfff;
+  margin-bottom: 0.5rem;
+}
+
+/* Links */
+a {
+  color: #0073e6;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #0073e6;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
 }
