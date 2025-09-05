@@ -1,75 +1,145 @@
 /* Global Styles */
 body {
-  font-family: 'Poppins', Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #f0f4f8;
-  color: #333;
-  line-height: 1.6;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text */
 }
 
 /* Header */
 header {
-  text-align: center;
-  background: linear-gradient(135deg, #0073e6, #00bfff);
-  color: white;
-  padding: 4rem 2rem;
+    background-color: #1f1f1f;
+    color: #c28cc2;
+    padding: 40px 20px;
+    text-align: center;
 }
+
+/* Header Container (side layout) */
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px; /* space between text and image */
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Text Part */
+.header-text {
+    flex: 2;
+    text-align: left;
+}
+
+/* Profile Box */
+.profile-box {
+    display: inline-block;      /* shrink to fit the image */
+    background-color: #1e1e1e;  /* dark box */
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(131, 205, 222, 0.6); /* subtle glow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-box:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 20px #83cdde; /* glow effect */
+}
+
+/* Profile Image */
+.profile-pic {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+/* Responsive: stack on smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-text {
+        text-align: center;
+    }
+}
+
+
+
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+    margin: 0;
+    font-size: 2.5em;
 }
+
 header p {
-  font-size: 1.2rem;
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #bbbbbb;
 }
 
-/* Section Styling */
+/* Headings */
+h2 {
+    color: #c28cc2; /* Your chosen pink-purple color */
+}
+
+/* Navigation Bar */
+nav {
+    background: #2c2c2c;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: #c28cc2; /* Match navbar links with heading color */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #83cdde; /* Hover color to match contact links */
+}
+
+/* Sections */
 section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
-}
-section h2 {
-  color: #0073e6;
-  margin-bottom: 1rem;
+    padding: 20px;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    max-width: 900px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
-/* Projects */
-.project {
-  margin-bottom: 1.5rem;
-}
-.project h3 {
-  color: #00bfff;
-  margin-bottom: 0.5rem;
+section:hover {
+    transform: scale(1.01);
+    background-color: #252525;
 }
 
-/* Links */
-a {
-  color: #0073e6;
-  text-decoration: none;
+/* Contact Links */
+.contact a {
+    color: #83cdde; /* Your chosen light blue color */
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 1.1em;
 }
-a:hover {
-  text-decoration: underline;
+
+.contact a:hover {
+    color: #c28cc2; /* On hover, switch to pink-purple */
 }
 
 /* Footer */
 footer {
-  text-align: center;
-  padding: 1rem;
-  background: #0073e6;
-  color: white;
-  margin-top: 2rem;
-}
 
-/* Responsive */
-@media (max-width: 768px) {
-  header h1 {
-    font-size: 2rem;
-  }
-  header p {
-    font-size: 1rem;
-  }
+    text-align: center;
+    padding: 15px;
+    background-color: #1f1f1f;
+    color: #aaaaaa;
+    margin-top: 30px;
+
 }
